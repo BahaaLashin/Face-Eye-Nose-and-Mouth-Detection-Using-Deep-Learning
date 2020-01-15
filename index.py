@@ -24,6 +24,7 @@ for face in faces:
     cv2.circle(image,face['keypoints']['nose'],1,[255,0,255],-1)
 
 
+cv2.imwrite('image.jpg',image)
 cv2.imshow('Image',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
